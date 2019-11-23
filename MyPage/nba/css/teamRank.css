@@ -1,0 +1,125 @@
+ /*  头部图标  */
+ .headIcon {
+    width: 92%;
+    background: #006bb7;
+    height: 80px;
+    font-family: "微软雅黑";
+    padding-left: 8%;
+}
+
+.headIcon img {
+    opacity: 0.8;
+}
+
+.headIcon img:hover {
+    opacity: 1;
+}
+
+/* 中间内容  */
+.trCenter {
+    width: 60%;
+    height: 1400px;
+    background: white;
+    padding: 40px 20%;
+}
+
+
+.play_container {
+    width: auto;
+    height: 750px;
+    background-color: rgb(246, 246, 246);
+}
+
+.play_header {
+    width: auto;
+    height: 28px;
+    border: 1px solid #0f6db4;
+    padding: 10px 0px;
+    background-color: #0f6db4;
+}
+
+.play_headerleft {
+    width: 10%;
+    height: auto;
+    text-align: center;
+    color: white;
+    float: left;
+    font-size: 20px;
+}
+
+
+a:visited {
+    color: white;
+}
+
+.play_table {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(146, 144, 144);
+}
+
+th {
+    border: 0px;
+}
+
+.even td {
+    /*必须加td，代表的是一行进行*/
+    background: #f4f4f4;
+    color: black;
+    text-align: center;
+}
+
+.odd td {
+    background-color: #FFF;
+    color: black;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: gray;
+
+}
+
+tr:hover td {
+    background: none;
+}
+
+td a:link,
+td a:visited {
+    color: #006bb7;
+}
+
+.blankDiv {
+    width: 100%;
+    height: 40px;
+    background-color: #f4f4f4;
+}
+
+.eastDiv {
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    background-color: #0f6db4;
+}
+
+.eastFont {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.noName {
+    width: 25%;
+    height: auto;
+    position: relative;
+    top: 10px;
+    text-align: center;
+    float: left;
+    color: gray;
+    cursor: pointer;
+}
+
+.noName:hover {
+    color: red;
+}

@@ -1,0 +1,145 @@
+
+
+/* #list {
+    width: 4760px;
+    height: 440px;
+    position: absolute;
+    z-index: 1;
+} */
+#buttons {
+    position: absolute;
+    height: 30px;
+    width: 800px;
+    z-index: 2;
+    bottom: 20px;
+    left: 50px;
+}
+
+#buttons span {
+    cursor: pointer;
+    float: left;
+    height: 30px;
+     margin:0 15px; 
+    color: black;
+    font-size: 20px;
+}
+
+.circle{
+    width: 5px;
+    height: 5px;
+    float: left;
+    margin-right: 3px;
+    background-color: red;
+    opacity: 0.5;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+#buttons .on {
+    font-weight: bold;
+    color: red;
+    transform: scale(1.5)
+    /* background: orangered; */
+}
+
+.carousal .arrow {
+    cursor: pointer;
+    display: none;
+    line-height: 39px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+    top: 180px;
+    background-color: RGBA(0, 0, 0, .3);
+    color:black;
+}
+
+.arrow:hover {
+    background-color: RGBA(0, 0, 0, .7); 
+}
+
+#container:hover  .arrow {
+    display: block;
+}
+
+#prev {
+    left: 20px;
+}
+
+#next {
+    right: 20px;
+}
+
+/*  头部图标  */
+.headIcon {
+    width: 92%;
+    background: #1a477b;
+    height: 80px;
+    font-family: "微软雅黑";
+    padding-left: 8%;
+  }
+  
+  .headIcon img {
+    opacity: 0.8;
+  }
+  
+  .headIcon img:hover {
+    opacity: 1;
+  }
+  
+  /* 轮播图的图片动画效果 */
+  .listSub img{
+      box-shadow: 0 0 4px gray;
+      cursor: pointer;
+      transition: 0.5s;
+  }
+
+  .listSub img:hover{
+      transform: scale(1.2)
+}
+
+ /*  图片区  */
+ .nba50Pic {
+    width: 1000px;
+    height: 550px;
+    margin: 30px 0px;
+    overflow: hidden;
+    box-sizing: border-box ;
+    margin-left: 300px;
+}
+.PicTop{
+    width: 1000px;
+    height: 40%;
+    margin-bottom: 20px;
+}
+.PicLeft{
+    width: 33%;
+    height: auto;
+    float: left;
+    cursor: pointer;
+}
+.PicLeftTop{
+    width: 320px;
+    height: 240px;
+    overflow: hidden;
+}
+.PicLeftBottom{
+    width: 320px;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.PicLeftTop img{
+    box-shadow: 0 0 4px gray;
+    transition: 0.5s;
+}
+.PicLeftTop img:hover{
+    transform: scale(1.2,1.2);
+}

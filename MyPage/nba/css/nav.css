@@ -1,0 +1,109 @@
+.page {
+  width: 100%;
+  height: 80px;
+}
+
+.nav {
+  width: 100%;
+  background: #006bb7;
+  height: 80px;
+  font-family: "微软雅黑";
+}
+
+.nav-li {
+  width: 20%;
+  height: 80px;
+  background: #006bb7;
+  text-align: center;
+  line-height: auto;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: -10px;
+  position: relative;
+  ;
+}
+
+.tit {
+  margin-top: 30px;
+  width: auto;
+  height: 50px;
+ 
+}
+
+.nav-li:hover ul {
+  display: block;
+}
+
+.nav-li ul {
+  width: 300px;
+  height: auto;
+  position: absolute;
+  top: 80px;
+  left: 60px;
+  background-color: #006bb7;
+  color: #fff;
+  display: none;
+  z-index: 20;
+}
+
+.nav-li ul li {
+  width: auto;
+  height: 40px;
+  padding-top: 20px;
+  border-bottom: 1px dashed #666;
+  color: #fff;
+  text-align: center;
+  line-height: auto;
+  position: relative;
+  z-index: 20;
+
+}
+
+.nav-li ul li:hover .list-3 {
+  display: block;
+}
+
+
+.list-3 {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  left: 300px;
+  top: 0px;
+  z-index: 99;
+  display: none;
+}
+
+.list-3Dom {
+  width: auto;
+  height: 40px;
+  padding-top: 20px;
+  background: #006bb7;
+  border-bottom: 1px dashed #666;
+  border-left: 1px dashed #666;
+  text-align: center;
+  line-height: auto;
+  z-index: 99;
+  color: #fff;
+}
+
+.nav-li ul li:hover {
+  background-color: #4169E1;
+}
+
+.list-3Dom:hover {
+  background-color: #4169E1;
+}
+
+.nav-li:hover {
+  background-color: #4169E1;
+}
+
+/* nba图标 */
+.NbaIconClass{
+  float: left;
+  margin-left: 40px;
+  margin-top: -10px;
+}

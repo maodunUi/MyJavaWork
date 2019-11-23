@@ -1,0 +1,142 @@
+.SinglePeople {
+    width: 100%;
+    height: 470px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 5px 5px;
+}
+
+/* 资料第一行 */
+.SingleIntroduce {
+    width: 100%;
+    height: 40px;
+}
+
+.IntroduceSub {
+    box-sizing: border-box;
+    padding: 5px 5px;
+    width: 25%;
+    height: auto;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+
+div .IntroduceSub:first-child {
+    border-bottom: 4px solid red;
+    color: red;
+}
+
+/* 资料第二行 */
+.SingleTwo {
+    width: 100%;
+    height: 170px;
+    border-bottom: 1px solid gold;
+    box-sizing: border-box ;
+}
+
+.SingleTwoSub {
+    box-sizing: border-box;
+    width: 25%;
+    height: 170px;
+    float: left;
+    text-align: center;
+}
+
+.STSSub {
+    width: 100%;
+    height: 50%;
+}
+
+.STSSubLeft {
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0px 5px;
+    float: left;
+    text-align: center;
+}
+
+div .STSSubLeft:first-child {
+    font-size: 50px;
+    color: gold;
+    padding-top: 30px;
+}
+
+.STSSubThree {
+    width: 33.3%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px 5px;
+    float: left;
+    text-align: center;
+}
+
+div .SingleTwoSub:nth-child(3) {
+    text-align: left;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+
+/* 第三行 */
+.SingleThree {
+    width: 100%;
+    height: 200px;
+}
+
+.STS {
+    width: 16.5%;
+    height: 200px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+
+}
+
+div .STS:first-child {
+    box-sizing: border-box;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.STSdivOne {
+    float: left;
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 50px;
+    height: 150px;
+    color: white;
+    background-color: #0099ff;
+}
+
+.STSdivTwo {
+    color: white;
+    float: left;
+    width: 40px;
+    margin-left: 30px;
+    margin-top: 100px;
+    height: 100px;
+    background-color: #c9c9c9;
+}
+/* 第四行  */
+.SingleFour{
+    width: 100%;
+    height: 50px;
+    text-align: center ;
+    background-color: #f6f6f6;
+    border-bottom: 1px solid gold;
+    box-sizing: border-box ;
+}
+.SFS{
+    width: 16.5%;
+    height: 50px;
+    box-sizing: border-box ;
+    padding: 15px;
+    color: black;
+    float: left;
+
+}
+
+.STS a:link,.STS a:visited{
+    color: black;
+}

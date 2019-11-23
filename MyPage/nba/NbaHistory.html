@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/navHistory.css">
+    <link rel="stylesheet" href="css/nbaHistroy.css">
+    <link rel="stylesheet" href="css/nba.css">
+    <script src="js/nbaHistory.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+            background-color:rgba(0, 0, 0,0.1);
+        }
+
+        .carousal {
+            width: 1000px;
+            height: 360px;
+            /* border: 2px solid blue; */
+            /*  */
+            background-color: white;
+            margin-left: 300px;
+            position: relative;
+        }
+
+        .container {
+            width: 1000px;
+            height: 360px;
+            overflow: hidden;
+            position: relative;
+        }
+      
+        #list {
+            width: 7000px;
+            height: 360px;
+            position: absolute; 
+            z-index: 1;
+        }
+        
+        .listSub{
+            width: 1000px;
+            box-sizing: border-box;
+            padding: 30px 50px;
+            float: left;
+            height: 360px;
+        }
+
+        #list img {
+            float: left;
+        }
+
+        .Msg {
+            float: left;
+            margin-left: 30px;
+            width: 600px;
+            height: 300px;
+            margin-top: 80px;
+        }
+
+        /* 轮播图里面的a标签 */
+      .Msg a:link,
+      .Msg a:visited {
+            color: black;
+        }
+       .Msg a:hover{
+            color: red;
+        }
+        /* 导航栏的a标签 */
+        .page a:link,.page a:visited{
+            color: white;
+        }
+        .page a:hover{
+            color: #0099FF;
+        } 
+    </style>
+</head>
+
+<body>
+
+    <div class="nba50Container">
+        <!-- 头部图标 -->
+        <div class="headIcon">
+            <img src="img/nbaPicture/nba-icon.png" alt="" height="80px">
+            <style>
+                .NBASite {
+                    position: absolute;
+                    top: 0px;
+                    z-index: 9999;
+                    left: 410px;
+                    color: white;
+                    padding-top: 20px;
+                    font-size: 30px;
+                    opacity: 0.3;
+                }
+
+                .NBALogin {
+                    float: right;
+                    margin-top: 30px;
+                    margin-right: 60px;
+                    cursor: pointer;
+                }
+            </style>
+            <div class="NBASite">
+                NBA.COM
+            </div>
+            <div class="NBALogin">
+                <img src="img/logo/icon_30_user_f91522.png" alt="">
+            </div>
+        </div>
+
+        <!-- 导航栏 -->
+        <div class="page">
+            <div class="nav">
+
+                <div class="nav-li">
+
+                    <div class="tit"><a href="index.html">首页</a></div>
+                </div>
+
+                <div class="nav-li">
+                    <div class="tit">新闻</div>
+
+                </div>
+
+                <div class="nav-li">
+                    <div class="tit">专题</div>
+                    <ul>
+                        <li>
+                            <a href="TeamRank.html">球队排名</a></li>
+                        <li>
+                            NBA休赛期观察</li>
+                        <li>
+                            NBA历史</li>
+                        <li>
+                            NBA50大球星</li>
+
+
+                    </ul>
+                </div>
+
+                <div class="nav-li">
+                    <div class="tit">球队</div>
+                    <ul>
+                        <li>
+                            东南赛区
+                            <div class="list-3">
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/1.jpg" alt="" class="NbaIconClass" width="40px" height="40px">
+                                    <a href="#">黄蜂</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/2.jpg" alt="" class="NbaIconClass" width="40px" height="40px">
+                                    <a href="#">老鹰</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/1.jpg" alt="" class="NbaIconClass" width="40px" height="40px">
+                                    <a href="#">奇才</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/19.jpg" alt="" class="NbaIconClass" width="40px"
+                                        height="40px">
+                                    <a href="#">魔术</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/8.jpg" alt="" class="NbaIconClass" width="40px" height="40px">
+                                    <a href="#">热火</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            中部赛区
+                            <div class="list-3">
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/1.jpg" alt="" class="NbaIconClass" width="40px" height="40px">
+                                    <a href="#">骑士</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/2.jpg" alt="" class="NbaIconClass" width="40px" height="40px">
+                                    <a href="#">公牛</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/3.jpg" alt="" class="NbaIconClass" width="40px" height="40px">
+                                    <a href="#">活塞</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/4.jpg" alt="" class="NbaIconClass" width="40px" height="40px">
+                                    <a href="#">步行者</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/5.jpg" alt="" class="NbaIconClass" width="40px" height="40px">
+                                    <a href="#">雄鹿</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            大西洋赛区
+                            <div class="list-3">
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/6.jpg" alt="" class="NbaIconClass" width="40px" height="40px">
+                                    <a href="#">猛龙</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/7.jpg" alt="" class="NbaIconClass" width="40px" height="40px">
+                                    <a href="#">尼克斯</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/8.jpg" alt="" class="NbaIconClass" width="40px" height="40px">
+                                    <a href="#">凯尔特人</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/9.jpg" alt="" class="NbaIconClass" width="40px" height="40px">
+                                    <a href="#">篮网</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/10.jpg" alt="" class="NbaIconClass" width="40px"
+                                        height="40px">
+                                    <a href="#">76人</a></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            太平洋
+                            <div class="list-3">
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/11.jpg" alt="" class="NbaIconClass" width="40px"
+                                        height="40px">
+                                    <a href="#">勇士</a>
+                                </div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/12.jpg" alt="" class="NbaIconClass" width="40px"
+                                        height="40px">
+                                    <a href="#">快船</a>
+                                </div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/13.jpg" alt="" class="NbaIconClass" width="40px"
+                                        height="40px">
+                                    <a href="#">国王</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/14.jpg" alt="" class="NbaIconClass" width="40px"
+                                        height="40px">
+                                    <a href="team.html">湖人</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/15.jpg" alt="" class="NbaIconClass" width="40px"
+                                        height="40px">
+                                    <a href="#">太阳</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            西北赛区
+                            <div class="list-3">
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/16.jpg" alt="" class="NbaIconClass" width="40px"
+                                        height="40px">
+                                    <a href="#">爵士</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/17.jpg" alt="" class="NbaIconClass" width="40px"
+                                        height="40px">
+                                    <a href="#">雷霆</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/18.jpg" alt="" class="NbaIconClass" width="40px"
+                                        height="40px">
+                                    <a href="#">开拓者</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/19.jpg" alt="" class="NbaIconClass" width="40px"
+                                        height="40px">
+                                    <a href="#">掘金</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/20.jpg" alt="" class="NbaIconClass" width="40px"
+                                        height="40px">
+                                    <a href="#">森林狼</a></div>
+                            </div>
+                        </li>
+                        <li>
+                            西南赛区
+                            <div class="list-3">
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/21.jpg" alt="" class="NbaIconClass" width="40px"
+                                        height="40px">
+                                    <a href="#">马刺</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/22.jpg" alt="" class="NbaIconClass" width="40px"
+                                        height="40px">
+                                    <a href="#">火箭</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/23.jpg" alt="" class="NbaIconClass" width="40px"
+                                        height="40px">
+                                    <a href="#">灰熊</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/24.jpg" alt="" class="NbaIconClass" width="40px"
+                                        height="40px">
+                                    <a href="#">鹈鹕</a></div>
+                                <div class="list-3Dom">
+                                    <img src="img/nbaIcon/25.jpg" alt="" class="NbaIconClass" width="40px"
+                                        height="40px">
+                                    <a href="#">独行侠</a></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-li">
+                    <div class="tit">球员</div>
+                    <ul>
+                        <li>
+                            <a href="player.html">
+                                现役球员
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="">
+                                退役球员
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- 轮播图 -->
+        <div class="carousal">
+            <div class="container" id="container">
+                <div id="list" style="left: -1000px;">
+                    <div class="listSub">
+                    <img src="img/nbaHistory/1.jpg" alt="1" />
+                    <div class="Msg">
+                        <h2>1977-1981</h2>
+                        <p>
+                            <a href="">
+                                在2003-2005年间，活塞与马刺成为了联盟中的主角，他们在这三年之中瓜分了所有的总冠军，而在2005年，
+                                他们也展开了直接对话。当然，2003年的选秀也一直都处于我们的话题之中。详情>>>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="listSub">
+                        <img src="img/nbaHistory/2.jpg" alt="1" />
+                        <div class="Msg">
+                            <h2>1977-1981</h2>
+                            <p>
+                                <a href="">
+                                    在2003-2005年间，活塞与马刺成为了联盟中的主角，他们在这三年之中瓜分了所有的总冠军，而在2005年，
+                                    他们也展开了直接对话。当然，2003年的选秀也一直都处于我们的话题之中。详情>>>
+                                </a>
+                            </p>
+                        </div>
+                </div>
+                <div class="listSub">
+                        <img src="img/nbaHistory/3.jpg" alt="2" />
+                        <div class="Msg">
+                            <h2>1977-1981</h2>
+                            <p>
+                                <a href="">
+                                    在2003-2005年间，活塞与马刺成为了联盟中的主角，他们在这三年之中瓜分了所有的总冠军，而在2005年，
+                                    他们也展开了直接对话。当然，2003年的选秀也一直都处于我们的话题之中。详情>>>
+                                </a>
+                            </p>
+                        </div>
+                </div>
+                <div class="listSub">
+                        <img src="img/nbaHistory/4.jpg" alt="3" />
+                        <div class="Msg">
+                            <h2>1977-1981</h2>
+                            <p>
+                                <a href="">
+                                    在2003-2005年间，活塞与马刺成为了联盟中的主角，他们在这三年之中瓜分了所有的总冠军，而在2005年，
+                                    他们也展开了直接对话。当然，2003年的选秀也一直都处于我们的话题之中。详情>>>
+                                </a>
+                            </p>
+                        </div>
+                </div>
+                <div class="listSub">
+                        <img src="img/nbaHistory/5.jpg" alt="4" />
+                        <div class="Msg">
+                            <h2>1977-1981</h2>
+                            <p>
+                                <a href="">
+                                    在2003-2005年间，活塞与马刺成为了联盟中的主角，他们在这三年之中瓜分了所有的总冠军，而在2005年，
+                                    他们也展开了直接对话。当然，2003年的选秀也一直都处于我们的话题之中。详情>>>
+                                </a>
+                            </p>
+                        </div>
+                </div>
+                <div class="listSub">
+                        <img src="img/nbaHistory/6.jpg" alt="5" />
+                        <div class="Msg">
+                            <h2>1977-1981</h2>
+                            <p>
+                                <a href="">
+                                    1957-1966是NBA开始进入迅速发展的新时期，在这十年中，出现了波士顿凯尔特人、圣路易斯老鹰和明尼阿波利斯湖人“三足鼎立”的局面，在度过十年（1947-1956）的成长阵痛期之后，NBA在当时已经获得了比较广泛的关注。而在这十年（1957-1966），波士顿凯尔特人史无前例地在这十年之中全部进入了总决赛，并拿下了其中的九个总冠军，在这九个总冠军里，还包括一个八连冠（1959-1966）。详情>>>
+                                </a>
+                            </p>
+                        </div>
+                </div>
+                <div class="listSub">
+                        <img src="img/nbaHistory/7.jpg" alt="5" />
+                        <div class="Msg">
+                            <h2>1977-1981</h2>
+                            <p>
+                                <a href="">
+                                    1957-1966是NBA开始进入迅速发展的新时期，在这十年中，出现了波士顿凯尔特人、圣路易斯老鹰和明尼阿波利斯湖人“三足鼎立”的局面，在度过十年（1947-1956）的成长阵痛期之后，NBA在当时已经获得了比较广泛的关注。而在这十年（1957-1966），波士顿凯尔特人史无前例地在这十年之中全部进入了总决赛，并拿下了其中的九个总冠军，在这九个总冠军里，还包括一个八连冠（1959-1966）。详情>>>
+                                </a>
+                            </p>
+                        </div>
+                </div>
+                </div>
+
+                <div id="buttons">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    <span index="1" class="on">1995</span>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <span index="2">1996</span>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <span index="3">1997</span>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <span index="4">1998</span>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <span index="5">2000</span>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+
+                <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+                <a href="javascript:;" id="next" class="arrow">&gt;</a>
+            </div>
+           
+        </div>
+        <!-- 图片区 -->
+        <div class="nba50Pic">
+            <div class="PicTop">
+                <div class="PicLeft">
+                        <a href="">
+                    <div class="PicLeftTop">
+                        <img src="img/nbaHistory/a.jpg" alt="">
+                    </div>
+                </a>
+                    <div class="PicLeftBottom">
+                    <a href="nba50.html">NBA50大巨星</a>
+                    </div>
+                </div>
+                <div class="PicLeft">
+                    <div class="PicLeftTop">
+                            <img src="img/nbaHistory/b.png" alt="">
+                    </div>
+                    <div class="PicLeftBottom">
+                    <a href="">    NBA选秀掌故</a>
+                    </div>
+                </div>
+                    <div class="PicLeft">
+                        <div class="PicLeftTop">
+                                <img src="img/nbaHistory/c.jpg" alt="">
+                        </div>
+                        <div class="PicLeftBottom">
+                            <a href="">历届冠军及FMVP
+                                </a>
+                            </div>
+                    </div>
+            </div>
+            <div class="PicBottom">
+                    <div class="PicLeft">
+                            <div class="PicLeftTop">
+                                    <img src="img/nbaHistory/d.jpg" alt="">
+                            </div>
+                            <div class="PicLeftBottom">
+                                <a href="">
+                                历届常规赛MVP
+                            </a>
+                            </div>
+                        </div>
+                        <div class="PicLeft">
+                            <div class="PicLeftTop">
+                                    <img src="img/nbaHistory/e.jpg" alt="">
+                            </div>
+                            <div class="PicLeftBottom">
+                                <a href="">
+                                历届最佳主教练
+                            </a>
+                            </div>
+                        </div>
+                            <div class="PicLeft">
+                                <div class="PicLeftTop">
+                                        <img src="img/nbaHistory/f.jpg" alt="">
+                                </div>
+                                <div class="PicLeftBottom">
+                                <a href="">    
+                                    NBA知识Q&A</a>
+                                </div>
+                            </div>
+
+            </div>
+
+        </div>
+
+        <!-- 底部 -->
+         <div class="footer">
+            <p>©2018年著作权 NBA 中国所有权。</p>
+            <p><a href="">NBA.com/China</a> 上除去使用条款中所特别提及的部分之外，其它任何内容都不得以任何形式被复制、再传播，或篡改。</p>
+            <p> 进入<a href="">NBA.com/China</a> 后，即表示阁下同意遵守<a href="">NBA.com/China</a> 的隐私政策和使用条款。</p>
+            <p>有任何的建议和意见，都欢迎联络我们：<a href=""> NBAChinaInfo@nba.com</a></p>
+            <p>有关NBA商品授权合作事宜，敬请联系:<a href=""> GMGChinaBusinessInquiry@nba.com</a></p>
+        </div> 
+    </div>
+</body>
+
+</html>

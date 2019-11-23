@@ -1,0 +1,38 @@
+/*  头部图标  */
+.headIcon {
+    width: 92%;
+    background: #006bb7;
+    height: 80px;
+    font-family: "微软雅黑";
+    padding-left: 8%;
+  }
+  
+  .headIcon img {
+    opacity: 0.8;
+  }
+  
+  .headIcon img:hover {
+    opacity: 1;
+  }
+
+  /*  第三层内容区  */
+.ThreeLayerContent {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px 20px;
+}
+
+.ThreeLayerContent p {
+    margin-bottom: 29px;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.ThreeLayerContentImg {
+    width: 960px;
+    height: 457px;
+    background: url(../img/nba50/125681784.jpg);
+    margin-bottom: 43px;
+    position: relative;
+}

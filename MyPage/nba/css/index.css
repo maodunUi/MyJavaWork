@@ -1,0 +1,369 @@
+.Indexcontainer {
+  width: 100%;
+  background-color: aliceblue;
+  position: relative;
+  height: 1000px;
+}
+
+/*  头部图标  */
+.headIcon {
+  width: 92%;
+  background: #006bb7;
+  height: 80px;
+  font-family: "微软雅黑";
+  padding-left: 8%;
+}
+
+.headIcon img {
+  opacity: 0.8;
+}
+
+.headIcon img:hover {
+  opacity: 1;
+}
+
+/* 最右部的固定div */
+.Rightnav {
+  width: 80px;
+  height: 205px;
+  position: fixed;
+  right: 0;
+  top: 45%;
+  margin-top: -103px;
+  font-family: "微软雅黑";
+  box-shadow: 0 0 4px gray;
+}
+
+.Rnav-li {
+  width: 80px;
+  height: 40px;
+  border-bottom: 1px solid white;
+  background: #2464B5;
+  text-align: center;
+  line-height: 40px;
+  color: black;
+  font-size: 16px;
+}
+
+.Rnav-li:hover {
+  cursor: pointer;
+  background-color: #0079cd;
+}
+
+.Rblank {
+  height: 10px;
+  background-color: white;
+  width: 100%;
+}
+
+/* 倒数第二层底部栏  */
+.SecondFooter {
+  width: auto;
+  height: 250px;
+  background-color: #012f50;
+  box-sizing: border-box;
+  padding: 0px 20%;
+}
+
+.SFDiv {
+  width: 16.5%;
+  height: 250px;
+  float: left;
+  box-sizing: border-box;
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.bigFont {
+  font-size: 20px;
+}
+
+.SFDiv p {
+  margin-top: 10px;
+}
+
+.SFDiv img {
+  margin-top: 20px;
+}
+
+/* 隐藏的图片 */
+.LeftImg {
+  position: absolute;
+  right: 80px;
+  display: none;
+}
+
+
+/* 改变第二行(轮播图右边)右侧a链接的颜色 */
+
+.newTitle a:link,
+.newTitle a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.newTitle a:hover {
+  color: #006bb7;
+}
+
+
+
+/* 改变数据王这里的a链接颜色 */
+.msgDisplay a:link,
+.msgDisplay a:visited {
+  color: #356da0;
+}
+
+.msgDisplay a:hover {
+  color: blue;
+}
+
+
+
+.bigHeaderMsg a:link,
+.bigHeaderMsg a:visited {
+  color: #356da0;
+}
+
+.bigHeaderMsg a:hover {
+  color: black;
+}
+
+/* 图集 */
+.picDiv {
+  width: 95%;
+  height: 850px;
+  padding: 10px 20px;
+  box-shadow: 0px 1px 2px gray;
+}
+
+.picDivList {
+  width: auto;
+  height: 253px;
+  padding-top: 5px;
+}
+
+.picHeader {
+  width: 31%;
+  height: 230px;
+  margin-left: 20px;
+  float: left;
+  overflow: hidden;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3)
+}
+
+.picMsg {
+  width: auto;
+  height: 27px;
+}
+
+.picMsgHeader {
+  width: 31%;
+  height: auto;
+  margin-left: 20px;
+  float: left;
+  text-align: center;
+}
+
+.picHeader img {
+  position: relative;
+  cursor: pointer;
+}
+
+.picHeader img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.picHeader img,
+.picHeader p {
+  transition: all 1s;
+}
+
+.picHeader img:before,
+.picHeader img:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  right: 100px;
+  -moz-border-radius: 100px 10px;
+  border-radius: 100px 10px;
+}
+
+/* 新闻图片 */
+.newimg {
+  width: 90px;
+  height: 88px;
+  float: left;
+  overflow: hidden;
+
+}
+
+.newTitle {
+  width: 300px;
+  height: 57px;
+  padding-top: 30px;
+  padding-left: 2px;
+  box-shadow: 0 0 4px gray;
+  display: inline-block;
+}
+
+
+/* 数据王 */
+.datalist {
+  margin-top: 20px;
+  width: 96.5%;
+  height: 450px;
+  /* border: 1px solid #808080; */
+
+}
+
+.dataHeader {
+  width: auto;
+  height: 40px;
+  border-bottom: 1px solid #808080;
+  margin-bottom: 10px;
+}
+
+.dataCenterContainer {
+  width: auto;
+  height: 410px;
+}
+
+.data {
+  width: 19%;
+  height: 410px;
+  margin-right: 4px;
+  margin-left: 4px;
+  float: left;
+  box-shadow: 0px 0px 4px gray;
+}
+
+.subdataone {
+  width: auto;
+  height: 200px;
+}
+
+.subdata {
+  width: auto;
+  height: 100px;
+  /*  border-bottom: 1px solid #808080; */
+}
+
+/* 子数据标题 */
+.subDataHeader {
+  width: auto;
+  height: 30px;
+  padding-top: 10px;
+  color: white;
+  text-align: center;
+  background-color: #2464B5;
+}
+
+/* 子数据图标 */
+.subDataIcon {
+  width: 50%;
+  height: 40px;
+  overflow: hidden;
+
+}
+
+/* 子数据信息 */
+.subDataMsg {
+  width: 100%;
+  height: 120px;
+}
+
+/* 人物照片 */
+.msgImg {
+  width: 50%;
+  height: 120px;
+  float: left;
+  overflow: hidden;
+}
+
+/* 人物照片旁介绍 */
+.msgDisplay {
+  width: 48%;
+  float: left;
+  height: 120px;
+}
+
+/* 未单击和单击后的样式 */
+.msgDisplay a:link {
+  color: blue;
+}
+
+/* 鼠标移上去的样式 */
+.msgDisplay a:hover {
+  color: black;
+}
+
+/* 大头照片  */
+.bigHeader {
+  width: 20%;
+  float: left;
+  height: 80px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/* 大头照片介绍 */
+.bigHeaderMsg {
+  padding-top: 40px;
+  width: 50%;
+  float: left;
+  height: 60px;
+}
+
+/* 大头照片号码 */
+.bigHeaderNumber {
+  width: 20%;
+  padding-top: 40px;
+  float: left;
+  height: 60px;
+}
+
+.dataHeaderLeft {
+  display: inline-block;
+  width: 600px;
+  height: auto;
+}
+
+.dataHeaderRight {
+  display: inline-block;
+  width: 400px;
+  text-align: right;
+  color: blue;
+  height: auto;
+}
+
+.dataHeaderRight a:link,
+.dataHeaderRight a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+.dataHeaderRight a:hover {
+  color: aqua;
+}
+
+.line {
+  width: 160px;
+  height: 1px;
+  margin-left: 20px;
+  border-bottom: 1px solid #808080;
+}
+
+.longLine {
+  width: 98%;
+  height: 1px;
+  background-color: #808080;
+  margin-top: 20px;
+}
