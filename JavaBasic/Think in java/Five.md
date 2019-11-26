@@ -123,7 +123,7 @@ f3(1)
 还有值得注意的一点。当调用下面的static final修饰的域时，第一个不需要初始化，因为是编译器常量。第二个需要，因为不是编译器常量。
 
 ```java
-static final int staicFinal = 47 ; //1
+static final int staicFinal = 47 ; //1 在准备阶段就把staticFinal = 47
 staic final int staticFinal2 = new Random().nextInt(47) ; //2
 ```
 

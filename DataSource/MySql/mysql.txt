@@ -1,0 +1,13 @@
+mysql存储引擎:
+innodb:支持事务
+myisam:不支持事务，查询效类高
+myi 存储索引
+myd 存储数据
+frm 表结构定义等
+
+索引:
+Btree Hash
+Btree 左边小右边大，平衡二叉树  Myisam的应用 非聚集索引
+Btree 左边小右边大，平衡二叉树  innodb的应用 聚集索引  只有一个聚集索引
+
+缺点：字段更新会有性能损耗

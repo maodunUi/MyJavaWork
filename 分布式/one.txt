@@ -1,0 +1,16 @@
+每一个war包都有一个单独webapp类加载器
+jasperLoader类加载器
+课程主讲 Mark老师 QQ：446106311
+instrumentation 修改class文件
+redefineClasses
+retransformClass
+scala - kafka
+
+修改class文件 替换class文件
+java生态操作二进制码
+Asm -> cglib
+AttachAPI
+BTrace
+
+往期视频咨询伊娜老师 QQ：2133576719
+四川省成都市青羊区西大街1号新城市广场
